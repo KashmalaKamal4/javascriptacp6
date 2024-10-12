@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square it</title>
+</head>
+<body>
+<h2>Let's square the number</h2>
+<label> Enter a number to square it: </label>
+<input type="text" id="inputnumber">
+<button onclick="sqnumber()">Square it</button>
+<p id="result"></p>
+<script>
+function sqnumber(){
+let num = document.getElementById("inputnumber").value;
+let sq_num = num*num;
+document.getElementById("result").innerText="The square of " + num + " is " + sq_num;
+}
+</script>
+</body>
+</html>
